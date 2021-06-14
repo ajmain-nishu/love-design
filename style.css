@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/* header section start */
+header {
+    background-color: #23232e;
+    text-align: center;
+}
+header h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+header p {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    width: 20%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+header i {
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 7px 10px;
+    margin: 40px 0;
+}
+header img {
+    width: 7%;
+    padding: 50px 0;
+}
+/* header section end */
+
+
+
+
+/* main+photography+footer section start */
+main,
+.photography,
+footer {
+    background-image: url(images/background.png);
+    background-size: contain;
+    overflow: hidden;
+}
+
+main .text p,
+.photography p {
+    text-align: center;
+    font-size: 22px;
+    width: 48%;
+    margin: auto;
+    color: #a3a3a5;
+}
+main .text {
+    margin: 65px 0;
+}
+
+main .flex {
+    display: flex;
+    flex-direction: row;
+    margin: 0 20%;
+}
+main h2,
+.photography h2 {
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    color: #23232e;
+}
+main .flex .item-1 h3,
+main .flex .item-2 h3,
+main .flex .item-3 h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 20px;
+}
+
+main .flex .item-1 h5,
+main .flex .item-2 h5,
+main .flex .item-3 h5 {
+    font-weight: 400;
+    padding: 0 20px;
+    text-align: justify;
+    color: #a3a3a5;
+}
+/* main+photography+footer section end */
+
+
+
+
+/* work+photography section start */
+.work {
+    background-color: #23232e;
+    text-align: center;
+}
+.work h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 60px;
+    padding-top: 65px;
+    
+}
+.work a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+.work a:hover {
+    text-decoration: underline 3px solid #7B77C9;
+}
+.flex-1 {
+    display: flex;
+    flex-direction: row;
+    padding: 0 80px;
+    flex-wrap: wrap;
+}
+.flex-1 .item-1,
+.flex-1 .item-2,
+.flex-1 .item-3,
+.flex-1 .item-4,
+.flex-1 .item-5,
+.flex-1 .item-6 {
+    flex-grow: 1;
+    margin: 10px 10px;
+}
+
+.work .item-1 h3,
+.work .item-2 h3,
+.work .item-3 h3,
+.work .item-4 h3,
+.work .item-5 h3,
+.work .item-6 h3 {
+    color: white;
+    font-weight: 400;
+    display: block;
+}
+.work .item-1 p,
+.work .item-2 p,
+.work .item-3 p,
+.work .item-4 p,
+.work .item-5 p,
+.work .item-6 p {
+    color: white;
+    font-weight: 400;
+    display: block;
+    color: #a3a3a5;
+}
+.flex-1 img {
+    width: 80%;
+}
+button {
+    text-transform: capitalize;
+    color: white;
+    background-color: #7B77C9;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin: 60px 0;
+}
+/* work+photography section end */
+
+
+
+
+/* photography section start */
+.btn {
+    margin: 60px auto;
+    display: block;
+}
+.photography p {
+    margin-bottom: 40px;
+    width: 45%;
+}
+/* photography section end */
+
+
+
+
+/* subscribe section start */
+.subscribe {
+    background-color: #23232e;
+    text-align: center;
+}
+.subscribe i {
+    color: white;
+    font-size: 3em;
+    margin-top: 160px;
+    margin-bottom: 40px;
+}
+.subscribe p {
+    color: white;
+    width: 30%;
+    margin: auto;
+}
+input {
+    padding: 10px 130px 10px 10px;
+    border-radius: 5px;
+    border: none;
+}
+/* subscribe section end */
+
+
+
+
+/* footer section start */
+footer {
+    text-align: center;
+}
+footer a {
+    padding: 60px 10px;
+    display: inline-block;
+    color: #a3a3a5;
+    font-size: 2em;
+}
+footer p {
+    margin-bottom: 90px;
+    color: #a3a3a5;
+}
+/* footer section end */
+
+
+
+
+/* media quaries start */
+
+
+/* max screen 770px start */
+@media screen and (max-width: 770px) {
+    header img {
+        width: 16%;
+        padding: 30px 0;
+    }
+    header p {
+        font-size: 15px;
+        width: 30%;
+        margin-bottom: 45px;
+    }
+    main .text p,
+    .photography p {
+         width: 58%;
+    }
+    .photography .flex-1 img {
+        padding-left: 12%;
+    }
+    .subscribe p {
+         width: 40%;
+    }
+}
+/* max screen 770px end */
+
+
+/* max screen 630px start */
+@media screen and (max-width: 630px) {
+    header h1 {
+        font-size: 45px;
+    }
+    main .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    .work a {
+        display: block;
+        background-color: #a3a3a5;
+        width: 40%;
+        margin: 10px auto;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .work a:hover {
+        text-decoration: none;
+    }
+    .subscribe input {
+        display: block;
+        margin: 20px auto;
+    }
+    .subscribe button {
+        margin-top: 30px;
+    }
+}
+/* max screen 630px end */
+
+
+/* max screen 500px start */
+@media screen and (max-width: 500px) {
+    main .text p,
+    .photography p {
+    text-align: center;
+    font-size: 17px;
+    width: 48%;
+    margin: auto;
+    color: #a3a3a5;
+    }
+    .photography h2 {
+        font-size: 43px;
+    }
+    .photography p {
+        margin-bottom: 14px;
+    }
+    .subscribe i {
+        margin-top: 52px;
+    }
+}
+/* max screen 500px end */
+
+
+/* max screen 370px start */
+@media screen and (max-width:370px) {
+    header img {
+        width: 35%;
+        padding: 30px 0;
+    }
+    header h1,
+    main h2,
+    .photography h2,
+    .work h2 {
+        font-size: 40px;
+    }
+    header p {
+        font-size: 15px;
+        width: 38%;
+    }
+    main .text p,
+    .photography p,
+    .subscribe p {
+         width: 67%;
+         font-size: 15px;
+    }
+}
+/* max screen 370px end */
+
+
+/* max screen 330px start */
+@media screen and (max-width: 330px) {
+    header h1,
+    .photography h2 {
+        font-size: 30px;
+    }
+    input {
+        padding: 10px 60px 10px 10px;
+    }
+}
+/* max screen 330px end */
+
+
+/* media quaries end */
